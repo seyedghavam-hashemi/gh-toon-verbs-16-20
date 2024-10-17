@@ -1,0 +1,76 @@
+.glow {
+   
+    animation: glow 1s ease-in-out infinite alternate;
+
+    --b: 5px;   /* control the border thickness */
+    --w: 100px; /* control the width of the line*/
+    --h: 0.2em; /* control the height of the element */
+    --c: #0B486B;
+   
+    width: fit-content;
+    padding: 12px calc(2*var(--h)/3);
+    line-height: var(--h);
+    color: #fff;
+    clip-path: 
+      polygon(
+       calc(var(--h)/2) 0,100vw 0,
+       100vw var(--b),100%  var(--b),
+       calc(100% - var(--h)/2) 100%,-100vw 100%,
+      -100vw calc(100% - var(--b)),0 calc(100% - var(--b))
+      );
+    border-image: var(--_g,linear-gradient(var(--c) 0 0)) fill 0//0 var(--w);
+    margin-inline: auto;
+
+
+
+
+
+
+
+
+
+
+
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  
+  
+  .fancy{
+    
+    --b: 5px;   /* control the border thickness */
+    --w: 100px; /* control the width of the line*/
+    --h: 0.2em; /* control the height of the element */
+    --c: #0B486B;
+   
+    width: fit-content;
+    padding: 12px calc(2*var(--h)/3);
+    line-height: var(--h);
+    color: #fff;
+    clip-path: 
+      polygon(
+       calc(var(--h)/2) 0,100vw 0,
+       100vw var(--b),100%  var(--b),
+       calc(100% - var(--h)/2) 100%,-100vw 100%,
+      -100vw calc(100% - var(--b)),0 calc(100% - var(--b))
+      );
+    border-image: var(--_g,linear-gradient(var(--c) 0 0)) fill 0//0 var(--w);
+    margin-inline: auto;
+
+
+
+
+
+
+
+
+  }
